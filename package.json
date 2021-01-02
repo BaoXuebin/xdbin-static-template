@@ -1,7 +1,8 @@
 {
   "name": "xdbin-static-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "生成 xdbin.com 静态页面模板的 NPM 命令行工具",
+  "homepage": "https://github.com/BaoXuebin/xdbin-static-template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +10,7 @@
   "bin": {
     "xdbin-static": "./index.js"
   },
-  "author": "",
+  "author": "baoxuebin",
   "license": "MIT",
   "dependencies": {
     "commander": "^6.2.1"
