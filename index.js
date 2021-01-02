@@ -2,21 +2,26 @@
 const program = require('commander');
 const fs = require('fs');
 const path = require('path');
- 
-program
-  .version('0.1.0')
-  .option('-p, --path [type]', '项目路径')
-  .option('-t, --title [type]', '标题')
-  .parse(process.argv);
 
+// 静态模板文件目录
+const fromFile = path.join(__dirname, 'static')
 // 项目名称
 let title = 'xdbin-static-template';
-if (program.title) {
-  title = program.title
-}
-
 // 项目生成的路径
 let projectPath = path.resolve('./');
+
+program
+  .command('create <name>')
+  .description('create new project')
+  .action((name) => {
+    title = name;
+  });
+
+program
+  .version('1.0.0', '-v, --version')
+  .option('-p, --path [type]', '项目路径')
+  .parse(process.argv);
+
 if (program.path) {
   projectPath = path.resolve(program.path)
 }
@@ -85,7 +90,7 @@ var exists = function( src, dst, callback ){
 };
 
 // 复制目录
-exists(path.join(__dirname, 'static'), projectPath, copy);
+exists(fromFile, projectPath, copy);
 console.log('项目构建成功，你可以按下面步骤初始化👇')
 console.log('')
 console.log('  [1] cd %s 切换到项目根目录', title)
