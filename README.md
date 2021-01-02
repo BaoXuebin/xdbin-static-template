@@ -13,6 +13,8 @@
 
 ```
 npm install xdbin-static-template@latest
+
+-p <path> 可以修改项目生成目录
 ```
 
 2. 切换到指定目录，执行 `xdbin-start create <name>` 创建项目
