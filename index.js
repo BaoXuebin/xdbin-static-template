@@ -35,16 +35,15 @@ var copy = function( src, dst ){
 
       paths.forEach(function( path ){
           var _src = src + '/' + path,
-              _dst = dst + '/' + path,
-              readable, writable;      
+              _dst = dst + '/' + path;      
 
-          fs.stat( _src, function( err, st ){
+          fs.stat(_src, function(err, st){
               if( err ){
                   throw err;
               }
 
               // 判断是否为文件
-              if( st.isFile() ){
+              if(st.isFile()){
                   // 创建读取流
                   fs.readFile(_src, {flag: 'r+', encoding: 'utf8'}, (err, data) => {
                     if (err) {
@@ -86,7 +85,7 @@ var exists = function( src, dst, callback ){
 };
 
 // 复制目录
-exists( './static', projectPath, copy );
+exists(path.join(__dirname, 'static'), projectPath, copy);
 console.log('项目构建成功，你可以按下面步骤初始化👇')
 console.log('')
 console.log('  [1] cd %s 切换到项目根目录', title)

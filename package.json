@@ -1,6 +1,6 @@
 {
   "name": "xdbin-static-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "生成 xdbin.com 静态页面模板的 NPM 命令行工具",
   "homepage": "https://github.com/BaoXuebin/xdbin-static-template",
   "main": "index.js",
