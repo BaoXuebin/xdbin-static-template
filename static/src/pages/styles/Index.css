@@ -1,0 +1,26 @@
+.hot-index-page .selector {
+  text-align    : left;
+  /* margin-left: 24px; */
+  margin-bottom : 12px;
+}
+
+.hot-index-page .selector span {
+  cursor      : pointer;
+  margin-right: 1rem;
+  font-weight : 600;
+}
+
+.hot-index-page .selector span.selected {
+  color          : #1ABC9C;
+  text-decoration: underline;
+}
+
+.hot-index-page .light-input {
+  border: 0px;
+}
+
+.hot-index-page .dark-input {
+  background-color: #292a2d;
+  color: #a9a9b3;
+  border: 0px;
+}
