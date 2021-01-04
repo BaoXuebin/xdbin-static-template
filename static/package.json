@@ -1,7 +1,6 @@
 {
   "name": "%title%",
-  "version": "0.1.0",
-  "proxy": "http://localhost:8080",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "env-cmd": "^9.0.3",

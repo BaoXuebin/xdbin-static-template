@@ -5,7 +5,7 @@ import ThemeContext from '../../context/ThemeContext';
 
 import './styles/PageWrapper.css';
 import LogoImage from '../../assets/logo.png'
-import Config from '../../Config/Config';
+import Config from '../../config/Config';
 
 class PageWrapper extends Component {
 
@@ -22,7 +22,8 @@ class PageWrapper extends Component {
                   {Config.title}
                 </div>
                 <div className="menu navbar-right">
-                  <a href="./" target="_blank">主页</a>
+                  <a href="/" target="_blank">主页</a>
+                  <a href="/about" target="_blank">关于</a>
                   <ThemeToggle />
                 </div>
               </div>

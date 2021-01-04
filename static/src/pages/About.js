@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import Page from './base/Page';
 import ThemeContext from '../context/ThemeContext';
 
-import './styles/Index.css'
+import './styles/About.css'
 
-class Index extends Component {
+class About extends Component {
 
   theme = this.context.theme
 
@@ -15,13 +15,13 @@ class Index extends Component {
     }
 
     return (
-      <div className="index-page">
-        主页
+      <div className="about-page">
+        关于
       </div>
     );
   }
 }
 
-Index.contextType = ThemeContext
+About.contextType = ThemeContext
 
-export default Page(Index);
+export default Page(About);
