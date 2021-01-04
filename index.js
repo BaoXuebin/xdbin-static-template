@@ -63,7 +63,8 @@ var copy = function (src, dst) {
               console.error(err);
               return;
             }
-            data = data.replace(/%title%/g, projectName)
+            data = data.replace(/%project_name%/g, projectName)
+            data = data.replace(/%project_title%/g, projectTitle)
             fs.writeFile(_dst, data, (err) => {
               if (err) {
                 console.error(err);

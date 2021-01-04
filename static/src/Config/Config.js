@@ -1,4 +1,3 @@
 export default {
-  title: '%title%',
-  author: 'baoxuebin'
+  title: '%project_title%'
 };
