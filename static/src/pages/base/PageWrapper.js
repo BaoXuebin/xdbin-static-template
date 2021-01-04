@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import ThemeToggle from '../../components/ThemeToggle';
 import ThemeContext from '../../context/ThemeContext';
-
-import './styles/PageWrapper.css';
 import LogoImage from '../../assets/logo.png'
 import Config from '../../config/Config';
 
-class PageWrapper extends Component {
+import './styles/PageWrapper.css';
 
+class PageWrapper extends Component {
   render() {
     let { theme } = this.context;
     return (
@@ -22,8 +22,8 @@ class PageWrapper extends Component {
                   {Config.title}
                 </div>
                 <div className="menu navbar-right">
-                  <a href="/" target="_blank">主页</a>
-                  <a href="/about" target="_blank">关于</a>
+                  <Link to="/">主页</Link>
+                  <Link to="/about">关于</Link>
                   <ThemeToggle />
                 </div>
               </div>
