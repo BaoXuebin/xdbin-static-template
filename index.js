@@ -36,9 +36,9 @@ if (program.title) {
 
 projectPath += `/${projectName}`
 
-console.log('项目名称：%s', projectName)
-console.log('项目标题：%s', projectTitle)
-console.log('项目路径：%s', projectPath)
+console.log(`Project name is [${projectName}].`)
+console.log(`Project title is [${projectTitle}].`)
+console.log(`Project path is [${projectPath}].`)
 
 var copy = function (src, dst) {
   // 读取目录中的所有文件/目录
@@ -94,10 +94,10 @@ var exists = function (src, dst, callback) {
 
 // 复制目录
 exists(fromFile, projectPath, copy);
-console.log('项目构建成功，你可以按下面步骤初始化👇')
+console.log('Success to create new project:')
 console.log('')
-console.log('  [1] cd %s 切换到项目根目录', projectName)
-console.log('  [2] npm install 安装NPM依赖')
-console.log('  [3] npm run start 运行')
+console.log(`  1. cd ${projectName}`)
+console.log('  2. npm install')
+console.log('  3. npm run start')
 console.log('')
-console.log('浏览器打开 http://localhost:3000 查看')
+console.log('Open http://localhost:3000')

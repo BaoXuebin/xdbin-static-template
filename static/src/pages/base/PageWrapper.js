@@ -22,8 +22,8 @@ class PageWrapper extends Component {
                   {Config.title}
                 </div>
                 <div className="menu navbar-right">
-                  <Link to="/">主页</Link>
-                  <Link to="/about">关于</Link>
+                  {/* <Link to="/">主页</Link>
+                  <Link to="/about">关于</Link> */}
                   <ThemeToggle />
                 </div>
               </div>
@@ -37,7 +37,7 @@ class PageWrapper extends Component {
           <footer className="footer">
             <div className="copyright">
               © 2021&nbsp;&nbsp;
-              <a href="https://github.com/BaoXuebin/xdbin-static-template">Github</a>
+              <a href={Config.github}>Github</a>
             </div>
           </footer>
         </div>
