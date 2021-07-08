@@ -1,4 +1,6 @@
-# Xdbin-static-template
+# xdbin-static-template
+
+![npm version](https://img.shields.io/npm/v/xdbin-static-template) ![downloads](https://img.shields.io/npm/dm/xdbin-static-template)
 
 生成 xdbin.com 静态页面模板的 NPM 命令行工具
 模板基于 `create-react-app`, 依赖于：
@@ -40,5 +42,5 @@ xdbin-static create my-web -t 我的网站
 ## 使用案例
 
 [生命游戏：生命游戏的 JS 实现](https://gameoflife.xdbin.com)  
-[微博热搜：微博热搜趋势](https://weibo-hot.xdbin.com)
+[微博热搜：微博热搜趋势](https://weibo-hot.xdbin.com)  
 [自习室：孤独之心俱乐部，一个人发呆的地方](https://room.xdbin.com)
