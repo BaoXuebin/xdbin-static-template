@@ -23,8 +23,22 @@
 ```
 npm install xdbin-static-template@latest -g
 
+xdbin-static create my-web -t 我的网站
+
+-v 查看版本信息
+-t <title> 项目标题
 -p <path> 可以修改项目生成目录
 ```
 
-2. 切换到指定目录，执行 `xdbin-start create <name>` 创建项目
+2. 切换到指定目录，执行 `xdbin-static create <name>` 创建项目
 3. 安装依赖，执行 `npm run start`，浏览器打开 [http://localhost:3000](http://localhost:3000) 查看
+
+## 项目截图
+
+![暗色模式](https://cdn.xdbin.com/xdbin-static-template/shot/dark.png)
+
+## 使用案例
+
+[生命游戏：生命游戏的 JS 实现](https://gameoflife.xdbin.com)  
+[微博热搜：微博热搜趋势](https://weibo-hot.xdbin.com)
+[自习室：孤独之心俱乐部，一个人发呆的地方](https://room.xdbin.com)
