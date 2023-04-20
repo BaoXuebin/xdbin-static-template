@@ -20,7 +20,7 @@ program
   });
 
 program
-  .version('1.0.4', '-v, --version')
+  .version('1.0.5', '-v, --version')
   .option('-t, --title [type]', 'project title')
   .option('-p, --path [type]', 'project path')
   .parse(process.argv);
